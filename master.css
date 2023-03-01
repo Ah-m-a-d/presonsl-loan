@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;}
+.container{
+    border-radius: 20px;
+    max-width: 100%;
+    font-size: 15px;
+    padding: 40px;
+    background-color: #eee;
+    color: #000;
+    box-shadow: -5px -5px 30px rgb(255 255 255 / 10%), 5px 5px 30px rgb(0 0 0 / 30%), inset -5px -5px 30px rgb(255 255 255 / 10%), inset 5px 5px 30px rgb(0 0 0 / 30%);
+    border: 8px solid #fff;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.header{
+    text-align: center;
+    color:#00dfc4;
+    margin-top: 10%;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+p{
+    font-size: 20px;
+    line-height: 2;
+}
+.form .box{
+    position: relative;
+    width: 500px;
+}
+.form .box input{
+    width:100%;
+    padding: 12px  18px 12px 48px;
+    background-color:#fff;
+    color:#000;
+    border: 1px solid rgb(255 255 255 / 10%);
+    font-weight: 300;
+    border-radius: 10px;
+    font-size: 1em;
+    box-shadow: -5px -5px 30px rgb(255 255 255 / 15%), 5px 5px 30px rgb(0 0 0 / 15%), inset -5px -5px 30px rgb(255 255 255 / 15%);
+    transition: 0.3s;
+    outline: none;
+}
+.form .box  span{
+    position: absolute;
+    left: 0;
+    padding: 12px  18px 12px 48px;
+    font-size: 1em;
+    font-weight: 300;
+    color:#333;
+    pointer-events: none;
+    transition: 0.3s;
+    letter-spacing: 0.05em;
+}
+.form .box input:focus{
+    border: 1px solid #00dfc4;
+}
+.form .box input:focus ~span{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    font-weight: 300;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #00dfc4;
+    border: 1px solid #00dfc4;
+    background-color: #000;
+    transform: translateY(-7px) translatex(25px);
+    font-size: 0.6em;
+    padding: 0 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+}
+.form .box input[type="submit"]{
+    background-color: #fff;
+    color:#00dfc4;
+    border: 1px solid #00dfc4;
+    cursor: pointer;
+}
+.form .box input[type="submit"]:hover{
+    color: #000;
+    background-color: #00dfc4;
+}
+.form .inputbx{
+    display: flex;
+    gap: 25px;
+}
+.form .inputbx .box{
+    width: 150px;
+}
+.form .radiobx{
+    display: flex;
+}
+.form .radiobx .box{
+    width: 150px;
+}
+.form .radiobx input{
+    width: fit-content;
+}
+.form .radiobx span{
+    padding-top: 0;
+}
