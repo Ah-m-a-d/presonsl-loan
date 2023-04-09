@@ -1,0 +1,16 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d master"
+  },
+  "keywords": [],
+  "author": "",
+  "homepage": "https://Ah-m-a-d.github.oi/loan",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
